@@ -68,7 +68,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   width: 100%;
-  height: 534px;
 }
 
 .result {
@@ -84,7 +83,6 @@ ol {
   width: 100%;
   height: 386px;
   margin-bottom: 12px;
-  overflow: hidden;
 }
 
 .result__video {
@@ -138,9 +136,6 @@ ol {
   opacity: 1;
   color: rgb(255 255 255 / 0.7);
 }
-.search-form__label:has(:focus) {
-  outline: none;
-}
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #ffffff;
@@ -153,28 +148,42 @@ ol {
   gap: 13px;
 }
 
-.search-form__submit-button {
-  align-self: flex-end;
-  width: 194px;
-  height: 34px;
-  outline: none;
+.button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  min-height: 34px;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.search-form__submit-button:active {
+.button:active {
   background-color: #545050;
 }
 
-.search-form__submit-button:focus {
+.button:focus {
   outline: none;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #ffffff;
   outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  align-self: flex-end;
+  width: 194px;
 }
 
 .content__details {
@@ -188,7 +197,7 @@ ol {
 .title {
   padding-top: 2px;
   color: #ffffff;
-  font-family: Oswald, serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -211,8 +220,9 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 298px;
+  height: 298px;
   overflow-y: auto;
+  gap: 30px;
 }
 
 .content__list {
@@ -240,7 +250,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:active {
@@ -267,7 +277,7 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   align-items: flex-start;
-  gap: 2px;
+  gap: 4px;
   min-width: 0;
 }
 
@@ -293,9 +303,9 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 16.2px;
   letter-spacing: 0%;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -337,29 +347,7 @@ ol {
   text-underline-offset: 2px;
 }
 
-.button {
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
 .more-button {
   width: 100%;
-  min-height: 34px;
-  margin-top: 30px;
-  margin-bottom: 4px;
-  outline: none;
-}
-
-.button:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  margin-bottom: 2px;
 }
